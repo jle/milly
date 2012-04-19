@@ -42,7 +42,9 @@ public class Milly extends Task {
 
     @Override
     public void execute() throws BuildException {
-        getProject().setProperty(propertyName, String.valueOf(System.currentTimeMillis()));
+        final String millis = String.valueOf(System.currentTimeMillis());
+        getProject().setProperty(this.propertyName, millis);
+        log(this.propertyName + "=" + millis);
     }
 
     /**
