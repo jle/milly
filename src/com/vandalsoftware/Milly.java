@@ -27,7 +27,7 @@
  * either expressed or implied, of the FreeBSD Project.
  */
 
-package org.thete;
+package com.vandalsoftware;
 
 import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.Task;
