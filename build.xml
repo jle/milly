@@ -71,7 +71,7 @@
     </target>
 
     <target name="use" description="Use the Task" depends="jar">
-        <taskdef name="milly" classname="org.thete.Milly" classpath="${out.jar}"/>
+        <taskdef name="milly" classname="com.vandalsoftware.Milly" classpath="${out.jar}"/>
         <milly property="current.time.millis"/>
         <echo>Current time in milliseconds is ${current.time.millis}</echo>
     </target>
